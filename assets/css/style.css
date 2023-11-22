@@ -1,3 +1,21 @@
+/* This will override default styling applied by browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: aqua;
+}
+
+header {
+  background-color: blueviolet;
+}
+
+main {
+  background-color: antiquewhite;
+}
+
+footer {
+  background-color: red;
 }
