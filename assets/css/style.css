@@ -11,13 +11,24 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  color: #3f4244;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 header {
-  background-color: blueviolet;
+  margin: 15px 0 15px 15px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+#logo {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #3f4244;
 }
 
 main {
