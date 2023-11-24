@@ -18,15 +18,19 @@ body {
 }
 
 header {
-  margin: 15px;
+  padding: 15px;
   /* display: flex;
   justify-content: space-between; */
-  align-items: center;
-  /* width: 100%; */
+  /* align-items: center; */
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  background-color: #fff;
 }
 
 header a {
   text-decoration: none;
+  font-weight: 400;
 }
 
 header a:hover {
@@ -37,8 +41,9 @@ header a:hover {
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #3f4244;
-  font-size: 1em;
+  font-size: 1.5em;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 #menu {
@@ -59,9 +64,35 @@ header a:hover {
 }
 
 main {
-  background-color: antiquewhite;
-
   flex: 1 0 auto;
+  margin-top: 70px;
+}
+
+#hero-container {
+  position: relative;
+}
+
+#hero-bg-img {
+  background: url("../images/pexels-marek-levak-2275221.webp") no-repeat center;
+  height: 600px;
+}
+
+#overlay-text {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 3%;
+}
+
+#overlay-text h2 {
+  color: #f4f1de;
+  letter-spacing: 4px;
+  padding: 17px 25px;
+  border-radius: 8px;
+  text-align: center;
+  /* background-color: rgba(86, 117, 104, 0.5); */
+  /* height: auto; */
 }
 
 footer {
