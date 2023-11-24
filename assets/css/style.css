@@ -33,9 +33,21 @@ header a {
   font-weight: 400;
 }
 
-header a:hover {
-  text-decoration: underline;
+header li a:hover {
+  padding: 5px;
+  background-color: rgba(86, 117, 104, 0.2);
+  border-radius: 5px;
 }
+
+h2 {
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+/* p {
+  text-align: center;
+  letter-spacing: 2px;
+} */
 
 #logo {
   text-transform: uppercase;
@@ -43,7 +55,7 @@ header a:hover {
   color: #3f4244;
   font-size: 1.5em;
   margin-bottom: 10px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #menu {
@@ -87,15 +99,37 @@ main {
 
 #overlay-text h2 {
   color: #f4f1de;
-  letter-spacing: 4px;
   padding: 17px 25px;
   border-radius: 8px;
-  text-align: center;
-  /* background-color: rgba(86, 117, 104, 0.5); */
-  /* height: auto; */
+  max-width: 460px;
+  margin: auto;
+  background-color: rgba(86, 117, 104, 0.3);
 }
 
 footer {
-  background-color: aliceblue;
-  padding: 15px;
+  /* background-color: aliceblue; */
+  /* padding: 15px; */
+  height: 88.5px;
+  /* border: 1px solid black; */
 }
+
+#footer-links {
+  display: flex;
+  list-style-type: none;
+  font-size: 150%;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+#footer-links a {
+  color: #3f4244;
+}
+
+/* #footer-links li {
+
+} */
+
+/* #footer-links li a {
+  display: in-line;
+} */
