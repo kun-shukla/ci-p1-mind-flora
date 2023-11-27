@@ -29,14 +29,18 @@ header {
 }
 
 header a {
-  text-decoration: none;
   font-weight: 400;
+}
+
+header a:hover {
+  text-decoration: none;
 }
 
 header li a:hover {
   padding: 5px;
   background-color: rgba(86, 117, 104, 0.2);
   border-radius: 5px;
+  text-decoration: none;
 }
 
 h2 {
@@ -55,6 +59,7 @@ h2 {
   color: #3f4244;
   font-size: 1.5em;
   margin-bottom: 10px;
+  display: inline;
   /* text-align: center; */
 }
 
@@ -104,6 +109,59 @@ main {
   max-width: 460px;
   margin: auto;
   background-color: rgba(86, 117, 104, 0.3);
+  font-size: 1.5rem;
+}
+
+.section-container {
+  width: 75%;
+  text-align: center;
+  margin: 20px auto 0;
+  max-width: 400px;
+  padding-top: 20px;
+}
+
+.content-heading {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  /* max-width: 275px; */
+  /* display: inline; */
+}
+
+#content {
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.about-section-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.about-section-images img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.about-section-images h4 {
+  padding: 15px 10px 10px;
+  letter-spacing: 2px;
+  margin: 0;
+  color: #3f4244;
+  /* text-transform: uppercase; */
+}
+
+.about-section-images h4:hover {
+  padding: 15px 10px 10px;
+  background-color: rgba(86, 117, 104, 0.2);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.about-section-images a:hover {
+  text-decoration: none;
 }
 
 footer {
