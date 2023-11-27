@@ -17,6 +17,10 @@ body {
   flex-direction: column;
 }
 
+p {
+  line-height: 30px;
+}
+
 header {
   padding: 15px;
   /* display: flex;
@@ -58,7 +62,7 @@ h2 {
   letter-spacing: 4px;
   color: #3f4244;
   font-size: 1.5em;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   display: inline;
   /* text-align: center; */
 }
@@ -66,6 +70,7 @@ h2 {
 #menu {
   /* display: flex; */
   list-style-type: none;
+  margin-top: 0.5rem;
 }
 
 #menu li {
@@ -115,9 +120,14 @@ main {
 .section-container {
   width: 75%;
   text-align: center;
-  margin: 20px auto 0;
+  margin: 0 auto;
   max-width: 400px;
   padding-top: 20px;
+}
+
+.green-section-container {
+  background-color: rgba(86, 117, 104, 0.2);
+  padding-bottom: 1px;
 }
 
 .content-heading {
@@ -125,11 +135,6 @@ main {
   text-transform: uppercase;
   /* max-width: 275px; */
   /* display: inline; */
-}
-
-#content {
-  line-height: 30px;
-  margin-top: 20px;
 }
 
 .about-section-images {
