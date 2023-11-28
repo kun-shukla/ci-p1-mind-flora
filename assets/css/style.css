@@ -21,6 +21,10 @@ p {
   line-height: 30px;
 }
 
+.center-align {
+  text-align: center;
+}
+
 header {
   padding: 15px;
   /* display: flex;
@@ -125,7 +129,7 @@ main {
   padding-top: 20px;
 }
 
-.green-section-container {
+.green-bg {
   background-color: rgba(86, 117, 104, 0.2);
   padding-bottom: 1px;
 }
@@ -148,6 +152,13 @@ main {
   border-radius: 50%;
   height: 200px;
   width: 200px;
+}
+
+.cat-image {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 8px;
 }
 
 .about-section-images h4 {
