@@ -13,30 +13,44 @@ body {
   font-weight: 300;
   color: #3f4244;
   min-height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
 }
 
 p {
   line-height: 30px;
+  letter-spacing: 1px;
+}
+
+h1,
+#menu li,
+h4 {
+  letter-spacing: 2px;
+}
+
+h2,
+h3 {
+  letter-spacing: 4px;
 }
 
 .center-align {
   text-align: center;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 header {
-  padding: 15px;
-  /* display: flex;
-  justify-content: space-between; */
-  /* align-items: center; */
+  padding: 15px 15px 0;
   width: 100%;
   position: fixed;
   z-index: 9;
   background-color: #fff;
 }
-
-header a {
+/* nav menu anchor tags */
+nav a {
   font-weight: 400;
 }
 
@@ -44,44 +58,28 @@ header a:hover {
   text-decoration: none;
 }
 
-header li a:hover {
+nav a:hover {
   padding: 5px;
   background-color: rgba(86, 117, 104, 0.2);
   border-radius: 5px;
-  text-decoration: none;
 }
-
-h2 {
-  text-align: center;
-  letter-spacing: 4px;
-}
-
-/* p {
-  text-align: center;
-  letter-spacing: 2px;
-} */
 
 #logo {
   text-transform: uppercase;
-  letter-spacing: 4px;
   color: #3f4244;
   font-size: 1.5em;
-  /* margin-bottom: 10px; */
   display: inline;
-  /* text-align: center; */
 }
 
 #menu {
-  /* display: flex; */
   list-style-type: none;
   margin-top: 0.5rem;
 }
 
 #menu li {
-  /* margin-left: 10px; */
   letter-spacing: 2px;
   display: inline;
-  font-size: 75%;
+  font-size: 90%;
   padding-right: 10px;
 }
 
@@ -91,7 +89,7 @@ h2 {
 
 main {
   flex: 1 0 auto;
-  margin-top: 70px;
+  margin-top: 92px;
 }
 
 #hero-container {
@@ -111,99 +109,92 @@ main {
   bottom: 3%;
 }
 
-#overlay-text h2 {
+#overlay-text h4 {
   color: #f4f1de;
   padding: 17px 25px;
   border-radius: 8px;
   max-width: 460px;
   margin: auto;
   background-color: rgba(86, 117, 104, 0.3);
-  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 4px;
 }
 
-.section-container {
-  width: 75%;
+#about-section {
+  padding: 30px 12.5% 0px;
   text-align: center;
-  margin: 0 auto;
-  max-width: 400px;
-  padding-top: 20px;
+  /* width: 75%; */
+  /* margin: 0 auto; */
+  /* max-width: 400px; */
+  /* padding-top: 20px; */
+}
+
+.cat-content-wrapper {
+  padding: 20px 12.5% 1px;
+  text-align: center;
 }
 
 .green-bg {
   background-color: rgba(86, 117, 104, 0.2);
-  padding-bottom: 1px;
 }
 
-.content-heading {
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  /* max-width: 275px; */
-  /* display: inline; */
-}
-
-.about-section-images {
+.about-sec-cat {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.about-section-images img {
+.about-sec-cat img {
   border-radius: 50%;
   height: 200px;
   width: 200px;
 }
 
-.cat-image {
+.about-sec-cat h4 {
+  padding: 15px 10px 10px;
+  margin: 0;
+  color: #3f4244;
+  /* text-transform: uppercase; */
+}
+
+.about-sec-cat a:hover {
+  text-decoration: none;
+}
+
+.about-sec-cat h4:hover {
+  padding: 15px 10px 10px;
+  background-color: rgba(86, 117, 104, 0.2);
+  border-radius: 5px;
+}
+
+.cat-content-wrapper p {
+  max-width: 500px;
+  margin: 0 auto 1rem;
+}
+
+.cat-content-img {
   max-width: 100%;
   height: auto;
   margin: 1rem 0;
   border-radius: 8px;
 }
 
-.about-section-images h4 {
-  padding: 15px 10px 10px;
-  letter-spacing: 2px;
-  margin: 0;
-  color: #3f4244;
-  /* text-transform: uppercase; */
+#user-form {
+  background-color: rgba(86, 117, 104, 0.6);
 }
 
-.about-section-images h4:hover {
-  padding: 15px 10px 10px;
-  background-color: rgba(86, 117, 104, 0.2);
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.about-section-images a:hover {
-  text-decoration: none;
-}
-
-footer {
-  /* background-color: aliceblue; */
-  /* padding: 15px; */
-  height: 88.5px;
-  /* border: 1px solid black; */
-}
-
-#footer-links {
+#footer-menu {
   display: flex;
   list-style-type: none;
   font-size: 150%;
   justify-content: space-around;
   align-items: center;
   height: 100%;
+  margin: 0;
+  padding: 28px 0px;
 }
 
-#footer-links a {
+#footer-menu a {
   color: #3f4244;
 }
-
-/* #footer-links li {
-
-} */
-
-/* #footer-links li a {
-  display: in-line;
-} */
