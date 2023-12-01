@@ -180,8 +180,78 @@ main {
   border-radius: 8px;
 }
 
-#user-form {
-  background-color: rgba(86, 117, 104, 0.6);
+#form-section {
+  position: relative;
+  width: 100%;
+}
+
+#form-bg-video {
+  height: 750px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#form-overlay {
+  /* background-color: rgba(86, 117, 104, 0.7); */
+  background-color: rgba(243, 213, 165, 0.702);
+  /* background-color: #f5f5ee; */
+  /* background-color: #cfc4a7; */
+  /* background-color: #f4f1de; */
+  position: absolute;
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  top: 5%;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* color: #f4f1de; */
+}
+
+#form-overlay h2 {
+  margin-bottom: 1rem;
+}
+
+label {
+  margin: 0;
+  font-weight: 400;
+}
+
+.text-input {
+  border-radius: 3px;
+  background: transparent;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  margin: 5px 0 15px;
+  color: #757575;
+}
+
+.text-input:hover {
+  border-color: #3f4244;
+}
+
+textarea {
+  height: 100px;
+}
+
+#share-btn {
+  padding: 5px 32px;
+  border-radius: 22px;
+  background-color: #fff;
+  color: #3f4244;
+  font-size: 120%;
+  margin: 0 auto;
+  border: none;
+  text-align: center;
+}
+
+#share-btn:hover {
+  background-color: #3f4244;
+  color: #efefef;
+  cursor: pointer;
 }
 
 #footer-menu {

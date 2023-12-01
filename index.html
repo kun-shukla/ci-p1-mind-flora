@@ -34,7 +34,7 @@
             <ul id="menu">
                 <li><a href="">About</a></li>
                 <li><a href="">Discover</a></li>
-                <li><a href="">Experience</a></li>
+                <!-- <li><a href="">Experience</a></li> -->
                 <li><a href="">Share</a></li>
             </ul>
         </nav>
@@ -189,8 +189,39 @@
         <!-- End of 'Category content section'-->
 
         <!-- Start of 'Form section'-->
+        <section id="form-section">
+            <video id="form-bg-video" autoplay muted loop>
+                <source src="assets/images/c56c4d58-1b08-4310-975c-2628f905fec5.mp4" type="video/mp4">
+            </video>
+            <form id="form-overlay" action="https://formdump.codeinstitute.net/" method="POST" target="_blank">
+                <h2>Share an Experience</h2>
+                <label for="full_name">Full Name</label>
+                <input type="text" id="full_name" name="full_name" class="text-input" placeholder="Full Name" required>
+                <label for="email_address">Email</label>
+                <input type="email" name="email_address" id="email_address" placeholder="Email" class="text-input"
+                    required>
+                <label for="dest_name">Destination</label>
+                <input type="text" id="dest_name" class="text-input" placeholder="Destination" required>
+                <label for="id">Category</label>
+                <select name="dest-cat" id="dest-cat" class="text-input" required>
+                    <option value="" disabled selected>Category</option>
+                    <option value="mountains">Mountains</option>
+                    <option value="coastal">Coastal</option>
+                    <option value="lakes">Lakes</option>
+                    <option value="forests">Forests</option>
+                </select>
+                <label for="desc">Description</label>
+                <textarea id="desc" class="text-input" placeholder="Share a brief description of your experience"
+                    name="desc" required></textarea>
+                <input type="submit" value="Share" id="share-btn">
+                <!-- <p>
+                    <label for="newsletter">Would you like sign-up to our monthly newsletter?</label>
+                    <input type="checkbox" name="newsletter" id="newsletter" value="Yes"><br>
+                    
+                </p> -->
+            </form>
+        </section>
         <!-- End of 'Form section'-->
-
     </main>
     <!-- End of Main section -->
 
