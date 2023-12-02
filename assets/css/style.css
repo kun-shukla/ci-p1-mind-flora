@@ -34,6 +34,10 @@ h3 {
   letter-spacing: 4px;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 .center-align {
   text-align: center;
 }
@@ -147,8 +151,8 @@ main {
 
 .about-sec-cat img {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 }
 
 .about-sec-cat h4 {
