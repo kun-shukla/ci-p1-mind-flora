@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 
+/* Generic styles */
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -18,11 +19,13 @@ body {
   flex-direction: column;
 }
 
+/* Fix for Bootstrap related spacing issue */
 .container-fluid,
 .col-12 {
   padding: 0;
 }
 
+/* Fix for Bootstrap related div overflow issue */
 .row {
   margin: 0 0;
 }
@@ -59,6 +62,7 @@ header {
   position: fixed;
   z-index: 9;
   background-color: #fff;
+  box-shadow: 0 2px 3px #757575;
 }
 /* nav menu anchor tags */
 nav a {
