@@ -188,11 +188,11 @@ main {
   text-decoration: none;
 }
 
-.about-sec-cat h4:hover {
+/* .about-sec-cat h4:hover {
   padding: 15px 10px 10px;
   background-color: rgba(86, 117, 104, 0.2);
   border-radius: 5px;
-}
+} */
 
 .cat-content-text-wrapper p {
   max-width: 500px;
@@ -302,6 +302,9 @@ textarea {
   #overlay-text h4 {
     font-size: 1.2rem;
   }
+
+  #form-overlay h2 {
+    font-size:1.5rem;
 }
 
 @media screen and (min-width: 576px) {
