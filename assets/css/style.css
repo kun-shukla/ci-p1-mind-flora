@@ -15,6 +15,14 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (hover: hover) {
+  nav a:hover {
+    padding: 5px;
+    background-color: rgba(86, 117, 104, 0.2);
+    border-radius: 5px;
+  }
+}
+
 /* Generic styles */
 body {
   font-family: "Montserrat", sans-serif;
@@ -82,11 +90,11 @@ header a:hover {
   text-decoration: none;
 }
 
-nav a:hover {
+/* nav a:hover {
   padding: 5px;
   background-color: rgba(86, 117, 104, 0.2);
   border-radius: 5px;
-}
+} */
 
 #logo {
   text-transform: uppercase;
