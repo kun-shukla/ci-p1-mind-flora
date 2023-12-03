@@ -8,6 +8,12 @@
   box-sizing: border-box;
 }
 
+/* This will set anchor point of sections targeted by Navbar so that content is not obscured by fixed nav-bar */
+
+html {
+  scroll-padding-top: 99px;
+}
+
 /* Generic styles */
 body {
   font-family: "Montserrat", sans-serif;
@@ -292,6 +298,10 @@ textarea {
 /* Media query: 576px and up (for e.g. larger mobile phones or for mobiles in landscape mode) */
 
 @media screen and (min-width: 576px) {
+  html {
+    scroll-padding-top: 59px;
+  }
+
   main {
     margin-top: 57px;
   }
@@ -312,6 +322,10 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
+  html {
+    scroll-padding-top: 65px;
+  }
+
   main {
     margin-top: 64px;
   }
@@ -336,6 +350,10 @@ textarea {
 }
 
 @media screen and (min-width: 992px) {
+  html {
+    scroll-padding-top: 70px;
+  }
+
   #menu li {
     padding-right: 40px;
     font-size: 125%;
@@ -397,6 +415,10 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
+  html {
+    scroll-padding-top: 81px;
+  }
+
   .cat-content-img {
     height: 400px;
     width: 400px;
