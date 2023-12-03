@@ -141,10 +141,11 @@ main {
 #about-section {
   padding: 30px 12.5% 0px;
   text-align: center;
-  /* width: 75%; */
-  /* margin: 0 auto; */
-  /* max-width: 400px; */
-  /* padding-top: 20px; */
+}
+
+#about-section p {
+  max-width: 800px;
+  margin: 0 auto 1rem;
 }
 
 .cat-content-wrapper {
@@ -186,7 +187,7 @@ main {
   border-radius: 5px;
 }
 
-.cat-content-wrapper p {
+.cat-content-text-wrapper p {
   max-width: 500px;
   margin: 0 auto 1rem;
 }
@@ -417,5 +418,10 @@ textarea {
 
   #overlay-text h4 {
     font-size: 1.9rem;
+  }
+
+  .about-sec-cat img {
+    width: 200px;
+    height: 200px;
   }
 }
