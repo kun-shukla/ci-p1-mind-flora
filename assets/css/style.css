@@ -140,7 +140,7 @@ main {
   padding: 17px;
   border-radius: 8px;
   margin: auto;
-  background-color: rgba(86, 117, 104, 0.3);
+  /* background-color: rgba(86, 117, 104, 0.3); */
   text-align: center;
   letter-spacing: 4px;
 }
@@ -297,6 +297,12 @@ textarea {
 }
 
 /* Media query: 576px and up (for e.g. larger mobile phones or for mobiles in landscape mode) */
+
+@media screen and (max-width: 332px) {
+  #overlay-text h4 {
+    font-size: 1.2rem;
+  }
+}
 
 @media screen and (min-width: 576px) {
   html {
