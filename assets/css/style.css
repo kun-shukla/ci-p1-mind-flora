@@ -249,6 +249,10 @@ label {
   border-color: #3f4244;
 }
 
+.text-input:focus {
+  outline: none;
+}
+
 textarea {
   height: 100px;
 }
