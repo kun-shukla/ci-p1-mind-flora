@@ -115,7 +115,7 @@ main {
   background: url("../images/pexels-marek-levak-2275221.webp") no-repeat center
     center;
   height: 600px;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 #overlay-text {
@@ -210,11 +210,7 @@ main {
 }
 
 #form-overlay {
-  /* background-color: rgba(86, 117, 104, 0.7); */
   background-color: rgba(243, 213, 165, 0.702);
-  /* background-color: #f5f5ee; */
-  /* background-color: #cfc4a7; */
-  /* background-color: #f4f1de; */
   position: absolute;
   max-width: 300px;
   padding: 20px;
@@ -286,4 +282,140 @@ textarea {
 
 #footer-menu a {
   color: #3f4244;
+}
+
+/* Media query: 576px and up (for e.g. larger mobile phones or for mobiles in landscape mode) */
+
+@media screen and (min-width: 576px) {
+  main {
+    margin-top: 57px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #form-overlay {
+    max-width: 450px;
+    margin-bottom: 30px;
+  }
+
+  #menu {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    margin-top: 64px;
+  }
+
+  #menu {
+    margin-top: 13px;
+  }
+  #menu li {
+    padding-right: 20px;
+    font-size: 100%;
+  }
+
+  #logo {
+    padding-left: 20px;
+    font-size: 1.8em;
+  }
+
+  .about-sec-cat img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #menu li {
+    padding-right: 40px;
+    font-size: 125%;
+  }
+
+  #logo {
+    font-size: 2em;
+  }
+
+  .about-sec-cat img {
+    width: 150px;
+    height: 150px;
+    margin-top: 0.5rem;
+  }
+
+  .cat-content-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .cat-content-wrapper {
+    padding: 20px 0 1px;
+  }
+
+  .cat-content-img {
+    margin: 0;
+    height: 350px;
+    width: 350px;
+  }
+
+  .cat-content-img-wrapper {
+    align-self: center;
+  }
+
+  .cat-content-wrapper .col-12 {
+    padding: 0 15%;
+  }
+
+  .cat-content-text-wrapper {
+    padding: 20px;
+    align-self: center;
+  }
+
+  .cat-content-wrapper:nth-child(even) .cat-content-img-wrapper {
+    order: 2;
+  }
+
+  .cat-content-wrapper:nth-child(even) .cat-content-text-wrapper {
+    order: 1;
+  }
+
+  #overlay-text {
+    max-width: 550px;
+  }
+
+  #overlay-text h4 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cat-content-img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .cat-content-flex-container {
+    margin-bottom: 30px;
+  }
+
+  #logo {
+    padding-left: 60px;
+    font-size: 2.5em;
+  }
+
+  #menu li {
+    padding-right: 60px;
+    font-size: 150%;
+  }
+
+  #overlay-text {
+    max-width: 600px;
+  }
+
+  #overlay-text h4 {
+    font-size: 1.9rem;
+  }
 }
