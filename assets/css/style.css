@@ -47,6 +47,7 @@ h2,
 h4 {
   line-height: 1.4;
 }
+
 h1,
 #menu li,
 h4 {
@@ -181,7 +182,6 @@ main {
   padding: 15px 10px 10px;
   margin: 0;
   color: #3f4244;
-  /* text-transform: uppercase; */
 }
 
 .about-sec-cat a:hover {
@@ -229,7 +229,6 @@ main {
   left: 0;
   right: 0;
   margin: auto;
-  /* color: #f4f1de; */
 }
 
 #form-overlay h2 {
@@ -304,7 +303,8 @@ textarea {
   }
 
   #form-overlay h2 {
-    font-size:1.5rem;
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 576px) {
