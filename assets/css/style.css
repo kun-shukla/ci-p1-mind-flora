@@ -127,8 +127,7 @@ main {
 }
 
 #hero-bg-img {
-  background: url("../images/pexels-marek-levak-2275221.webp") no-repeat center
-    center;
+  background: url("../images/hero-img.webp") no-repeat center center;
   height: 600px;
 }
 
