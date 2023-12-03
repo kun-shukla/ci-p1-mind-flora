@@ -130,7 +130,6 @@ main {
   background: url("../images/pexels-marek-levak-2275221.webp") no-repeat center
     center;
   height: 600px;
-  /* object-fit: cover; */
 }
 
 #overlay-text {
@@ -148,7 +147,6 @@ main {
   padding: 17px;
   border-radius: 8px;
   margin: auto;
-  /* background-color: rgba(86, 117, 104, 0.3); */
   text-align: center;
   letter-spacing: 4px;
 }
@@ -194,12 +192,6 @@ main {
 .about-sec-cat a:hover {
   text-decoration: none;
 }
-
-/* .about-sec-cat h4:hover {
-  padding: 15px 10px 10px;
-  background-color: rgba(86, 117, 104, 0.2);
-  border-radius: 5px;
-} */
 
 .cat-content-text-wrapper p {
   max-width: 500px;
