@@ -15,14 +15,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (hover: hover) {
-  nav a:hover {
-    padding: 5px;
-    background-color: rgba(86, 117, 104, 0.2);
-    border-radius: 5px;
-  }
-}
-
 /* Generic styles */
 body {
   font-family: "Montserrat", sans-serif;
@@ -86,21 +78,22 @@ nav a {
   font-weight: 400;
 }
 
+@media (hover: hover) {
+  nav a:hover {
+    padding: 5px;
+    background-color: rgba(86, 117, 104, 0.2);
+    border-radius: 5px;
+  }
+}
+
 header a:hover {
   text-decoration: none;
 }
-
-/* nav a:hover {
-  padding: 5px;
-  background-color: rgba(86, 117, 104, 0.2);
-  border-radius: 5px;
-} */
 
 #logo {
   text-transform: uppercase;
   color: #3f4244;
   font-size: 1.5em;
-  /* display: inline; */
 }
 
 #menu {
@@ -117,6 +110,11 @@ header a:hover {
 
 #menu a {
   color: #3f4244;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: rgba(86, 117, 104, 0.2);
 }
 
 main {
