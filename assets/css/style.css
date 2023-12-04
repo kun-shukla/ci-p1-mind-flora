@@ -8,7 +8,9 @@
   box-sizing: border-box;
 }
 
-/* This will set anchor point of sections targeted by Navbar so that content is not obscured by fixed nav-bar */
+/* Use 'scroll-padding-top' property to set the 'anchor point' of page sections targeted by respective page links, so that content is not obscured by fixed navbar.
+
+Use 'scroll-behaviour' property so that when a page link is clicked it 'scrolls' (rather than jumps) to the respective page section  */
 
 html {
   scroll-padding-top: 99px;
@@ -35,6 +37,15 @@ body {
 /* Fix for Bootstrap related div overflow issue */
 .row {
   margin: 0 0;
+}
+
+/* Fix 'sticky' hover effect issue on touchscreens when user taps navbar links */
+@media (hover: hover) {
+  nav a:hover {
+    padding: 5px;
+    background-color: rgba(86, 117, 104, 0.2);
+    border-radius: 5px;
+  }
 }
 
 p,
@@ -64,6 +75,8 @@ h3 {
   text-transform: uppercase;
 }
 
+/* Start of Header section */
+/* Use high z-index to ensure 'fixed' header does not get hidden behind other page elements while scrolling */
 header {
   padding: 15px 15px 0;
   width: 100%;
@@ -76,14 +89,6 @@ header {
 /* nav menu anchor tags */
 nav a {
   font-weight: 400;
-}
-
-@media (hover: hover) {
-  nav a:hover {
-    padding: 5px;
-    background-color: rgba(86, 117, 104, 0.2);
-    border-radius: 5px;
-  }
 }
 
 header a:hover {
@@ -112,16 +117,22 @@ header a:hover {
   color: #3f4244;
 }
 
+/* Override default hover effect color style (applied by Bootstrap's dropdown menu component) for consistency */
 .dropdown-item:focus,
 .dropdown-item:hover {
   background-color: rgba(86, 117, 104, 0.2);
 }
+/* End of Header section */
 
+/* Start of Main section */
+
+/* Apply Code Institute's Love Running project method to push footer down to bottom of page (using flex grow property). Use 'Margin-top' property to push Main section down so that it is not obscured by fixed navbar */
 main {
   flex: 1 0 auto;
   margin-top: 92px;
 }
 
+/* Start of Hero Section */
 #hero-container {
   position: relative;
 }
@@ -131,6 +142,7 @@ main {
   height: 600px;
 }
 
+/* Use positioning to make text 'overlay' hero bg image  */
 #overlay-text {
   position: absolute;
   padding: 0 20px;
@@ -149,7 +161,9 @@ main {
   text-align: center;
   letter-spacing: 4px;
 }
+/* End of Hero Section */
 
+/* Start of About Section */
 #about-section {
   padding: 30px 12.5% 0px;
   text-align: center;
@@ -158,15 +172,6 @@ main {
 #about-section p {
   max-width: 800px;
   margin: 0 auto 1rem;
-}
-
-.cat-content-wrapper {
-  padding: 20px 12.5% 1px;
-  text-align: center;
-}
-
-.green-bg {
-  background-color: rgba(86, 117, 104, 0.2);
 }
 
 .about-sec-cat {
@@ -191,6 +196,18 @@ main {
 .about-sec-cat a:hover {
   text-decoration: none;
 }
+/* End of About Section */
+
+/* Start of Categories Content Section */
+.cat-content-wrapper {
+  padding: 20px 12.5% 1px;
+  text-align: center;
+}
+
+/* Apply below class to 'Categories content' section to give an alternating background color to each category for visual appeal */
+.green-bg {
+  background-color: rgba(86, 117, 104, 0.2);
+}
 
 .cat-content-text-wrapper p {
   max-width: 500px;
@@ -203,18 +220,25 @@ main {
   margin: 1rem 0;
   border-radius: 8px;
 }
+/* End of Categories Content Section */
 
+/* End of Main section */
+
+/* Start of Form section */
 #form-section {
   position: relative;
   width: 100%;
 }
 
+/* Video form background */
 #form-bg-video {
   height: 800px;
   width: 100%;
+  /* Maintain video aspect ratio */
   object-fit: cover;
 }
 
+/* Use positioning to make form 'overlay' video background */
 #form-overlay {
   background-color: rgba(243, 213, 165, 0.702);
   position: absolute;
@@ -249,12 +273,14 @@ label {
   color: #757575;
 }
 
+/* Override browser 'hover/focus' default styling for input fields */
 .text-input:hover {
   border-color: #3f4244;
 }
 
 .text-input:focus {
   outline: none;
+  border: 1px solid #3f4244;
 }
 
 textarea {
@@ -275,9 +301,12 @@ textarea {
 #share-btn:hover {
   background-color: #3f4244;
   color: #efefef;
-  cursor: pointer;
 }
+/* End of Form section */
 
+/* Start of Footer section */
+
+/* Use 'flex' to layout footer icons  */
 #footer-menu {
   display: flex;
   list-style-type: none;
@@ -292,12 +321,17 @@ textarea {
 #footer-menu a {
   color: #3f4244;
 }
+/* End of Footer section */
 
-/* Media query: 576px and up (for e.g. larger mobile phones or for mobiles in landscape mode) */
-
+/* Media query: 332px or below (for small mobile phones) */
 @media screen and (max-width: 332px) {
+  /* Hero overlay text */
   #overlay-text h4 {
     font-size: 1.2rem;
+  }
+
+  #form-overlay {
+    max-width: 250px;
   }
 
   #form-overlay h2 {
@@ -305,30 +339,34 @@ textarea {
   }
 }
 
+/* Media query: 576px and up (for larger mobile phones or for mobiles in landscape mode) */
 @media screen and (min-width: 576px) {
   html {
     scroll-padding-top: 59px;
+  }
+
+  /* Make nav items appear in same line as logo */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #menu {
+    margin-bottom: 0;
   }
 
   main {
     margin-top: 57px;
   }
 
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
-
+  /* Make form width wider for larger screen area*/
   #form-overlay {
     max-width: 450px;
     margin-bottom: 30px;
   }
-
-  #menu {
-    margin-bottom: 0;
-  }
 }
 
+/* Media query: 768px and up (tablets) */
 @media screen and (min-width: 768px) {
   html {
     scroll-padding-top: 65px;
@@ -336,6 +374,11 @@ textarea {
 
   main {
     margin-top: 64px;
+  }
+
+  #logo {
+    padding-left: 20px;
+    font-size: 1.8em;
   }
 
   #menu {
@@ -346,20 +389,21 @@ textarea {
     font-size: 100%;
   }
 
-  #logo {
-    padding-left: 20px;
-    font-size: 1.8em;
-  }
-
+  /* Make About section circular images appear larger */
   .about-sec-cat img {
     width: 200px;
     height: 200px;
   }
 }
 
+/* Media query: 992px and up (laptops) */
 @media screen and (min-width: 992px) {
   html {
     scroll-padding-top: 70px;
+  }
+
+  #logo {
+    font-size: 2em;
   }
 
   #menu li {
@@ -367,8 +411,13 @@ textarea {
     font-size: 125%;
   }
 
-  #logo {
-    font-size: 2em;
+  /* Hero overlay text */
+  #overlay-text {
+    max-width: 550px;
+  }
+
+  #overlay-text h4 {
+    font-size: 1.7rem;
   }
 
   .about-sec-cat img {
@@ -377,6 +426,7 @@ textarea {
     margin-top: 0.5rem;
   }
 
+  /* Categories content layout change */
   .cat-content-flex-container {
     display: flex;
     justify-content: space-evenly;
@@ -405,6 +455,7 @@ textarea {
     align-self: center;
   }
 
+  /* Select every other category content sub-section and reverse order of image and corresponding text for visual appeal */
   .cat-content-wrapper:nth-child(even) .cat-content-img-wrapper {
     order: 2;
   }
@@ -412,28 +463,13 @@ textarea {
   .cat-content-wrapper:nth-child(even) .cat-content-text-wrapper {
     order: 1;
   }
-
-  #overlay-text {
-    max-width: 550px;
-  }
-
-  #overlay-text h4 {
-    font-size: 1.7rem;
-  }
+  /* End of Categories content layout change */
 }
 
+/* Media query: 1200px and up (larger screens/desktops) */
 @media screen and (min-width: 1200px) {
   html {
     scroll-padding-top: 81px;
-  }
-
-  .cat-content-img {
-    height: 400px;
-    width: 400px;
-  }
-
-  .cat-content-flex-container {
-    margin-bottom: 30px;
   }
 
   #logo {
@@ -446,6 +482,7 @@ textarea {
     font-size: 150%;
   }
 
+  /* Hero overlay text */
   #overlay-text {
     max-width: 600px;
   }
@@ -457,5 +494,13 @@ textarea {
   .about-sec-cat img {
     width: 200px;
     height: 200px;
+  }
+
+  .cat-content-flex-container {
+    margin-bottom: 30px;
+  }
+  .cat-content-img {
+    height: 400px;
+    width: 400px;
   }
 }
