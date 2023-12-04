@@ -19,21 +19,25 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Favicon to appear on browser tab // image taken from Flaticon.com -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <!-- Custom font awesome from Google Imports -->
+    <!-- Font Awesome import for footer icon links -->
     <script src="https://kit.fontawesome.com/13513ab6ba.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Header -->
     <header>
+        <!-- The logo 'Mind Flora' acts as 'Home' link -->
         <a href="index.html">
             <h1 id="logo">Mind Flora</h1>
         </a>
-        <!-- Navbar -->
+        <!-- Start of Navbar -->
         <nav>
             <ul id="menu">
                 <li><a href="#about">About</a></li>
+                <!-- Dropdown menu 'toggle' for sub-menu using Bootstrap classes -->
                 <li class="dropdown">
+                    <!-- End of Dropdown menu 'toggle' -->
+                    <!-- Dropdown sub-menu using Bootstrap classes -->
                     <a href="" class="dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Discover</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -42,6 +46,7 @@
                         <a class="dropdown-item" href="#lakes">Lakes</a>
                         <a class="dropdown-item" href="#forests">Forests</a>
                     </div>
+                    <!-- End of Dropdown sub-menu-->
                 </li>
                 <li><a href="#form-section">Share</a>
                 </li>
@@ -52,8 +57,11 @@
     <!-- End of Header -->
 
     <!-- Main section -->
+
+    <!-- Use of the Bootstrap class 'container-fluid' (along with 'row' and 'column' classes) for creating a grid layout for the Hero / About sections  -->
+
     <main class="container-fluid">
-        <!-- Hero image section -->
+        <!-- Start of Hero image section -->
         <div class="row">
             <div class="col-12">
                 <section id="hero-container">
@@ -83,7 +91,9 @@
                         fugiat nulla pariatur.</p>
                 </div>
             </div>
+            <!-- About section circular category images -->
             <div id="about-sec-cats-wrapper" class="row">
+                <!-- The Bootstrap classes in the 'div' below use a grid format to make this section responsive across mobile and larger screen devices -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="about-sec-cat">
                         <a href="#mountains">
@@ -125,6 +135,7 @@
                     </div>
                 </div>
             </div>
+            <!-- End of About section circular category images -->
         </section>
         <!-- End About section -->
 
@@ -137,6 +148,7 @@
                         <hr>
                     </div>
                 </div>
+                <!-- For the remaining part of this sub-section I decided to use a combination of 'flex' and custom media queries to make the layout responsive across the various screen 'break points' (this is repeated across all remaining categories)-->
                 <div class="cat-content-flex-container">
                     <div class="cat-content-img-wrapper">
                         <img class="cat-content-img" src="assets/images/cats-content-sec-mountain.webp"
@@ -266,17 +278,21 @@
 
         <!-- Start of 'Form section'-->
         <section id="form-section">
+            <!-- video auto plays silently in the background on loop -->
             <video id="form-bg-video" autoplay muted loop>
                 <source src="assets/videos/form-sec-bg-video.mp4" type="video/mp4">
             </video>
+            <!-- use Code Institute's link to 'store' dummy form data -->
             <form id="form-overlay" action="https://formdump.codeinstitute.net/" method="POST" target="_blank">
                 <h2>Share a Discovery</h2>
+                <!-- Use of label elements across all form input fields for Accessibility -->
                 <label for="full_name">Full Name</label>
                 <input type="text" id="full_name" name="full_name" class="text-input" placeholder="Full Name" required>
                 <label for="email_address">Email</label>
                 <input type="email" name="email_address" id="email_address" placeholder="Email" class="text-input"
                     required>
                 <label for="dest-cat">Category</label>
+                <!-- Use of Select tag for users to select a category. The first option is 'placeholder' text and has been set to 'disabled' so that it can't submitted as a data value -->
                 <select name="dest-cat" id="dest-cat" class="text-input" required>
                     <option value="" disabled selected>Category</option>
                     <option value="mountains">Mountains</option>
