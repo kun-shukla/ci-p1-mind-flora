@@ -113,6 +113,7 @@ Low-fi wireframes were created using hand-drawn illustrations
 ### Potential Future developments
 
 - Based on user feedback a mobile 'burger' menu may be implemented
+- Enhanced form features such as ability for users to upload and share an image of destination and to be able to sign up to a newsletter.
 - Creation of an ‘Explore’ section for users to locate Nature walks via an embedded map feature.
 - As the pool of user-generated content grows a 'Search' feature will be introduced to effectively filter through the 'library' of content.
 - In time the site will provide a feature to enable users to organise 'meetups' to explore the therapuetic benefits of nature as a group of like-minded fellow travel buddies. This will further enhance the benefit to mental wellbeing by combining in a social aspect as well.
@@ -123,7 +124,117 @@ Low-fi wireframes were created using hand-drawn illustrations
 
 - #### HTML
   - No errors were returned when passing through the official W3C Markup Validator
-    - [W3C Validator Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Faliokeeffe.github.io%2Fmindyoga%2Findex.html)
+    ![W3C Markup Validator image](assets/docs/readme-images/validator-html.webp)
 - #### CSS
+
   - No errors were found when passing through the official W3C CSS Validator
-    - [W3C CSS Validator Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Faliokeeffe.github.io%252Fmindyoga%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    ![W3C CSS Validator image](assets/docs/readme-images/valid-css.webp)
+
+- #### Accessibility
+
+  - The site achieved a Lighthouse (Chrome Dev tools) accessibility score of 94% which confirms that the colours and fonts chosen are easy to read and accessible
+    ![Lighthouse score image](assets/docs/readme-images/lighthouse-testing.webp)
+
+### Links Testing
+
+- All navigation links tested thoroughly to ensure the user is directed to the correct section of the website at the appropriate 'anchor point'
+- Social Media links in the page footer were tested manually to ensure there were no broken links and that they direct the user to the correct page.
+- Also ensured appropriate usage of ARIA attributes and that external links opened in a new tab.
+
+### Browser Testing
+
+- The Webpage was tested on Google Chrome, Safari, Firefox and Microsoft Edge web browsers with no issues observed.
+
+### Device Testing and responsiveness
+
+- The website was viewed on a variety of devices such as Desktop, Laptop and mobile devices to ensure responsiveness across a range different screen sizes. The website performed as intended. Responsiveness was also checked extensively via Chrome developer tools across multiple device screen dimesions with no errors observed.
+
+### Solved Bugs
+
+#### Anchor point issue when using page links to navigate to a particular section of the page
+
+- As the Header containing the navbar is fixed I encountered an issue whereby page links to navigate to different sections of the site were 'arriving' at an 'anchor point' concealed by the navbar.
+- To resolve this I used the 'scroll-padding-top' property to 'offset' the anchor points just enough to get the top of the target section to be fully visible just below the navbar.
+
+#### Issue with acheiving desired layout for the 'Categories Content' Section
+
+- I made a design decision to go with Bootstrap for making the webpage fully responsive using the predefined 'grid layout' classes. However I discovered that I was unable to achieve the desired outcome for how I wanted the elements on the page to appear across the various screen size 'break points' (specifically for the 'Categories Content' section)
+- My solution to this issue was to introduce flex styling and media queries to tweak the elements precisely and was therefore able to achieve the intended result.
+
+- As the Header containing the navbar is fixed I encountered an issue whereby page links to navigate to different sections of the site were 'arriving' at an 'anchor point' concealed by the navbar.
+- To resolve this I used the 'scroll-padding-top' property to 'offset' the anchor points just enough to get the top of the target section to be fully visible just below the navbar.
+
+### Known bugs
+
+No known bugs
+
+## Technologies Used
+
+- HTML5
+- CSS
+- Bootstrap
+
+### Frameworks / Libraries / Programs Used
+
+- [Am I Responsive](http://ami.responsivedesign.is/) - for the Readme file's hero image depicting a mock-up of how the web page looks like across different device screen sizes.
+- [Balsamiq](https://balsamiq.com/) - for lo-fi wireframing
+- [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - for implementing responsiveness and the navbar drop-down 'sub-menu' functionality
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and troubleshooting. As well as for testing responsiveness and site performance scores (Lighthouse)
+- [Font Awesome](https://fontawesome.com/) - Used for Social Media icons in footer.
+- [GitHub](https://github.com/) - Used for version control and deployment.
+- [Google Fonts](https://fonts.google.com/) - Used to import custom fonts.
+- [Adobe photoshop](https://adobe.com/) - for compressing image file sizes without reducing quality, converting images/video to a web compatible formats.
+- [Flaticon](https://www.flaticon.com) - for the site's favicon
+- [Coolers](https://coolors.co) - for deciding on a compatible color theme.
+- [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
+
+## Deployment
+
+The project was deployed using GitHub pages. The steps to deploy using GitHub pages are:
+
+1. Go to the repository on GitHub.com
+2. Select 'Settings' near the top of the page.
+3. Select 'Pages' from the menu bar on the left of the page.
+4. Under 'Build and deployment' > 'Branch' select the 'main' branch from the dropdown menu.
+5. Once selected, click the 'Save'.
+6. Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
+
+The live link can be found here - [Mind Flora](https://kun-shukla.github.io/ci-p1-mind-flora/)
+
+## Credits
+
+### Content
+
+[ChatGPT](https://chat.openai.com) - used for generating ideas for the site's content.
+
+### Media
+
+All media files were sourced from the below websites and attributed to the following photographers:
+
+- [Pexels](https://www.pexels.com/)
+  - Marek Levak - Hero Image
+  - Eberhard Grossgasteiger - 'Mountains' image in 'About' section
+  - Unknown - 'Seven Sisters, England' - 'Coasts' image in 'About' section
+  - Petra Ravensberg - 'A dirt road between trees' - 'Forests' image in 'About' section
+- [Unsplash](https://unsplash.com)
+  - Ben Griffiths - 'Sunrise at Ladybower Reservoir' - 'Lakes' image in 'About' section
+- [Adobe stock](https://stock.adobe.com)
+  - Whitcomberd - 'Hikers on Scafell Pike' image in Category content section (mountains)
+  - WavebreakmediaMicro - 'Autumn leaves falling on the camera' video used as background for 'Form' section
+- [Country File](https://www.countryfile.com/)
+  - Unknown - 'Ullswater, Cumbria, Lake District' image in Category content section (Lakes)
+- [Forestry England, UK](https://www.forestryengland.uk)
+  - Unknown - 'Cannock Chase Forest' image in Category content section (Forests)
+- [Much Better Adventures](www.muchbetteradventures.com)
+  - Unknown - 'Kynance Cove in Cornwall' image in Category content section (Coasts)
+
+### Online Resources Used
+
+- [W3Schools](https://www.w3schools.com/)
+- [Stack Overflow](https://stackoverflow.com/)
+
+## Acknowledgments
+
+- I found Code Institute's Love Running project and the Boostrap module on building the 'Whiskey landing page' particularly helpful for refreshing my knowledge on how to use media queries effectively. Various elements of the site were inspired by the Love Running project such as the Footer section and Hero Image section. I followed the CI tutorials on Bootstrap to incorporate the 'Dropdown menu' component for the 'Discover' nav link sub-menu.
+
+- The design for the project was inspired by the work of a previous CI student. The way thier website was designed was highly appealing to me and so I decided to base my own design layout on the same lines. I am therefore very greatful to this former student for thier great work and for inspiring me with an idea for my own project. This is the deployed link for their project on Github - https://aliokeeffe.github.io/mindyoga/
