@@ -26,7 +26,7 @@ The live link can be found here - [Mind Flora](https://kun-shukla.github.io/ci-p
 
 ## Design
 
-The website's use of color. fonts and imagery is essential to providing the user with a positive emotional experience while using the website. The image-driven approach and the use of a subtle green color across various sections of the page promote a sense of calm and relaxation and to tie-in with the overal theme of the website to promote nature for mental well-being. In addition to this, the font style - Montserrat - imported via [Google Fonts](https://fonts.google.com/), alongwith appropriate using of letter spacing and line-height properties gives the site a non cluttered appearance which is pleasing to the eye and promotes relaxation.
+The website's use of color. fonts and imagery is essential to providing the user with a positive emotional experience while using the website. The image-driven approach and the use of a subtle green color across various sections of the page promote a sense of calm and relaxation and ties in with the overal theme of the website to promote nature for mental well-being. In addition to this, the font style - Montserrat - imported via [Google Fonts](https://fonts.google.com/), alongwith appropriate using of letter spacing and line-height properties gives the site a non cluttered appearance which is pleasing to the eye and promotes relaxation.
 
 ## Wireframes
 
@@ -151,18 +151,15 @@ Low-fi wireframes were created using hand-drawn illustrations
 
 ### Solved Bugs
 
-#### Anchor point issue when using page links to navigate to a particular section of the page
+#### 'Anchor point' issue when using page links to navigate to a particular section of the page
 
 - As the Header containing the navbar is fixed I encountered an issue whereby page links to navigate to different sections of the site were 'arriving' at an 'anchor point' concealed by the navbar.
-- To resolve this I used the 'scroll-padding-top' property to 'offset' the anchor points just enough to get the top of the target section to be fully visible just below the navbar.
+- To resolve this I used the 'scroll-padding-top' property to 'offset' the anchor points just enough to get the top of the targeted section to be fully visible just below the navbar.
 
 #### Issue with acheiving desired layout for the 'Categories Content' Section
 
 - I made a design decision to go with Bootstrap for making the webpage fully responsive using the predefined 'grid layout' classes. However I discovered that I was unable to achieve the desired outcome for how I wanted the elements on the page to appear across the various screen size 'break points' (specifically for the 'Categories Content' section)
 - My solution to this issue was to introduce flex styling and media queries to tweak the elements precisely and was therefore able to achieve the intended result.
-
-- As the Header containing the navbar is fixed I encountered an issue whereby page links to navigate to different sections of the site were 'arriving' at an 'anchor point' concealed by the navbar.
-- To resolve this I used the 'scroll-padding-top' property to 'offset' the anchor points just enough to get the top of the target section to be fully visible just below the navbar.
 
 ### Known bugs
 
@@ -183,20 +180,20 @@ No known bugs
 - [Font Awesome](https://fontawesome.com/) - Used for Social Media icons in footer.
 - [GitHub](https://github.com/) - Used for version control and deployment.
 - [Google Fonts](https://fonts.google.com/) - Used to import custom fonts.
-- [Adobe photoshop](https://adobe.com/) - for compressing image file sizes without reducing quality, converting images/video to a web compatible formats.
+- [Adobe photoshop](https://adobe.com/) - for compressing image file sizes without reducing quality, converting images/video to a web compatible format.
 - [Flaticon](https://www.flaticon.com) - for the site's favicon
 - [Coolers](https://coolors.co) - for deciding on a compatible color theme.
 - [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
 
 ## Deployment
 
-The project was deployed using GitHub pages. The steps to deploy using GitHub pages are:
+The project was deployed using GitHub Pages. The steps to deploy using GitHub Pages are as follows:
 
 1. Go to the repository on GitHub.com
 2. Select 'Settings' near the top of the page.
 3. Select 'Pages' from the menu bar on the left of the page.
-4. Under 'Build and deployment' > 'Branch' select the 'main' branch from the dropdown menu.
-5. Once selected, click the 'Save'.
+4. Under 'Build and deployment' > 'Branch', select the 'main' branch from the dropdown menu.
+5. Once selected, click the 'Save' button.
 6. Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
 
 The live link can be found here - [Mind Flora](https://kun-shukla.github.io/ci-p1-mind-flora/)
@@ -235,6 +232,6 @@ All media files were sourced from the below websites and attributed to the follo
 
 ## Acknowledgments
 
-- I found Code Institute's Love Running project and the Boostrap module on building the 'Whiskey landing page' particularly helpful for refreshing my knowledge on how to use media queries effectively. Various elements of the site were inspired by the Love Running project such as the Footer section and Hero Image section. I followed the CI tutorials on Bootstrap to incorporate the 'Dropdown menu' component for the 'Discover' nav link sub-menu.
+- I found Code Institute's Love Running project and the Boostrap module on building the 'Whiskey landing page' particularly helpful for refreshing my knowledge on how to use media queries effectively. Various elements of the site were inspired by the Love Running project such as the Footer section and Hero Image section. I followed the CI tutorials on Bootstrap to incorporate the 'Dropdown menu' component for the 'Discover' Nav link sub-menu.
 
-- The design for the project was inspired by the work of a previous CI student. The way thier website was designed was highly appealing to me and so I decided to base my own design layout on the same lines. I am therefore very greatful to this former student for thier great work and for inspiring me with an idea for my own project. This is the deployed link for their project on Github - https://aliokeeffe.github.io/mindyoga/
+- The design for the project was inspired by the work of a previous CI student. The way their website was designed was highly appealing to me and so I decided to base my own design layout on the same lines. I am therefore very greatful to this former student for their great work and for inspiring me with an idea for my own project. This is the deployed link for their project on Github - https://aliokeeffe.github.io/mindyoga/
