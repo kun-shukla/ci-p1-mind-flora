@@ -19,6 +19,7 @@ html {
 
 /* Generic styles */
 body {
+  /* Use Montserrate font throughout the site (import via Google Fonts) with Sans Serif as a fall-back font */
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   color: #3f4244;
