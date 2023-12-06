@@ -1,6 +1,6 @@
 # Mind Flora
 
-Mind Flora is a site for encouraging users to reap the myriad health benefits of going out in to nature. The site’s main section highlights popular outdoor destinations across the UK, based on the categories of Mountains, Coasts, Lakes and Forests.
+Mind Flora is a site for encouraging users to reap the myriad health benefits of spending time in nature. The site’s main section highlights popular outdoor destinations across the UK, based on the categories of Mountains, Coasts, Lakes and Forests.
 
 In the form section at the bottom of the page, users have the facility to share and post their own favourite outdoor destinations. Thus creating a community driven content site for promoting the benefits of connecting with nature and the positive impact it has on mental well-being.
 
@@ -13,7 +13,7 @@ The live link can be found here - [Mind Flora](https://kun-shukla.github.io/ci-p
 ## Site Owner Goals
 
 - To promote and encourage users to connect with nature in the UK with a particular focus on benefits for mental wellbeing.
-- To promote a sense of community by allowing for users to share thier own recommended nature spots. Thereby using user-driven content to promote the site's overall aim of improving mental wellbeing.
+- To promote a sense of community by allowing for users to share their own recommended nature spots. Thereby using user-driven content to promote the site's overall aim of improving mental wellbeing.
 - To present a user-centric, mobile-first website that is intuitive to use and navigate. And one which is fully responsive across a range of different device screen sizes.
 - To use a colour theme and visual appeal that is aligned with the site's core purpose of fostering a sense of calm and mental relaxation.
 
@@ -26,7 +26,7 @@ The live link can be found here - [Mind Flora](https://kun-shukla.github.io/ci-p
 
 ## Design
 
-The website's use of color. fonts and imagery is essential to providing the user with a positive emotional experience while using the website. The image-driven approach and the use of a subtle green color across various sections of the page promote a sense of calm and relaxation and ties in with the overal theme of the website to promote nature for mental well-being. In addition to this, the font style - Montserrat - imported via [Google Fonts](https://fonts.google.com/), alongwith appropriate using of letter spacing and line-height properties gives the site a non cluttered appearance which is pleasing to the eye and promotes relaxation.
+The website's use of color. fonts and imagery is essential to providing the user with a positive emotional experience while using the website. The image-driven approach and the use of a subtle green color across various sections of the page promote a sense of calm and relaxation and ties in with the overall theme of the website to promote nature for mental well-being. In addition to this, the font style - Montserrat - imported via [Google Fonts](https://fonts.google.com/), along with appropriate using of letter spacing and line-height properties gives the site a non cluttered appearance which is pleasing to the eye and promotes relaxation.
 
 ## Wireframes
 
@@ -100,7 +100,7 @@ Low-fi wireframes were created using hand-drawn illustrations
 - On clicking the 'Share' button and passing data validation the entered data then gets 'stored' via a dummy link provided by Code Institute (the link opens in a new tab) - this is purely for testing purposes.
 - The form includes UX enhancing visual feedback features like on hover/focus custom styling i.e. when a input field is hovered over or selected with the cursor, a black outline appears.
 
-- This section encourages users to share thier own content which will then be added to the relevant Category content section of the webpage. This feature will eventually form the backbone of content generation on the website.
+- This section encourages users to share their own content which will then be added to the relevant Category content section of the webpage. This feature will eventually form the backbone of content generation on the website.
 
 ### Footer
 
@@ -116,7 +116,7 @@ Low-fi wireframes were created using hand-drawn illustrations
 - Enhanced form features such as ability for users to upload and share an image of destination and to be able to sign up to a newsletter.
 - Creation of an ‘Explore’ section for users to locate Nature walks via an embedded map feature.
 - As the pool of user-generated content grows a 'Search' feature will be introduced to effectively filter through the 'library' of content.
-- In time the site will provide a feature to enable users to organise 'meetups' to explore the therapuetic benefits of nature as a group of like-minded fellow travel buddies. This will further enhance the benefit to mental wellbeing by combining in a social aspect as well.
+- In time the site will provide a feature to enable users to organise 'meetups' to explore the therapeutic benefits of nature as a group of like-minded fellow travel buddies. This will further enhance the benefit to mental wellbeing by combining in a social aspect as well.
 
 ## Testing
 
@@ -147,7 +147,7 @@ Low-fi wireframes were created using hand-drawn illustrations
 
 ### Device Testing and responsiveness
 
-- The website was viewed on a variety of devices such as Desktop, Laptop and mobile devices to ensure responsiveness across a range different screen sizes. The website performed as intended. Responsiveness was also checked extensively via Chrome developer tools across multiple device screen dimesions with no errors observed.
+- The website was viewed on a variety of devices such as Desktop, Laptop and mobile devices to ensure responsiveness across a range different screen sizes. The website performed as intended. Responsiveness was also checked extensively via Chrome developer tools across multiple device screen dimensions with no errors observed.
 
 ### Solved Bugs
 
@@ -156,7 +156,7 @@ Low-fi wireframes were created using hand-drawn illustrations
 - As the Header containing the navbar is fixed I encountered an issue whereby page links to navigate to different sections of the site were 'arriving' at an 'anchor point' concealed by the navbar.
 - To resolve this I used the 'scroll-padding-top' property to 'offset' the anchor points just enough to get the top of the targeted section to be fully visible just below the navbar.
 
-#### Issue with acheiving desired layout for the 'Categories Content' Section
+#### Issue with achieving desired layout for the 'Categories Content' Section
 
 - I made a design decision to go with Bootstrap for making the webpage fully responsive using the predefined 'grid layout' classes. However I discovered that I was unable to achieve the desired outcome for how I wanted the elements on the page to appear across the various screen size 'break points' (specifically for the 'Categories Content' section)
 - My solution to this issue was to introduce flex styling and media queries to tweak the elements precisely and was therefore able to achieve the intended result.
@@ -232,6 +232,6 @@ All media files were sourced from the below websites and attributed to the follo
 
 ## Acknowledgments
 
-- I found Code Institute's Love Running project and the Boostrap module on building the 'Whiskey landing page' particularly helpful for refreshing my knowledge on how to use media queries effectively. Various elements of the site were inspired by the Love Running project such as the Footer section and Hero Image section. I followed the CI tutorials on Bootstrap to incorporate the 'Dropdown menu' component for the 'Discover' Nav link sub-menu.
+- I found Code Institute's Love Running project and the Bootstrap module on building the 'Whiskey landing page' particularly helpful for refreshing my knowledge on how to use media queries effectively. Various elements of the site were inspired by the Love Running project such as the Footer section and Hero Image section. I followed the CI tutorials on Bootstrap to incorporate the 'Dropdown menu' component for the 'Discover' Nav link sub-menu.
 
-- The design for the project was inspired by the work of a previous CI student. The way their website was designed was highly appealing to me and so I decided to base my own design layout on the same lines. I am therefore very greatful to this former student for their great work and for inspiring me with an idea for my own project. This is the deployed link for their project on Github - https://aliokeeffe.github.io/mindyoga/
+- The design for the project was inspired by the work of a previous CI student. The way their website was designed was highly appealing to me and so I decided to base my own design layout on the same lines. I am therefore very grateful to this former student for their great work and for inspiring me with an idea for my own project. This is the deployed link for their project on Github - https://aliokeeffe.github.io/mindyoga/
