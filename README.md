@@ -163,7 +163,7 @@ Low-fi wireframes were created using hand-drawn illustrations
 
 ### Known bugs
 
-No known bugs
+Issue observed while using the deployed site on ios Chrome/Safari browsers, whereby the form section's bg video does not immediately autoplay (despite being assigned the 'mute' atribute). However, on visiting other sections and then revisiting the form section via the navbar, the video does start to play (though this can be erratic particulary on Chrome it seems).
 
 ## Technologies Used
 
