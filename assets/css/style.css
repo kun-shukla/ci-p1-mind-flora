@@ -265,8 +265,8 @@ label {
 }
 
 .text-input {
-  border-radius: 3px;
-  background: transparent;
+  border-radius: 5px;
+  background-color: #f4f1de;
   width: 100%;
   padding: 10px;
   border: 1px solid #fff;
@@ -291,7 +291,7 @@ textarea {
 #share-btn {
   padding: 5px 32px;
   border-radius: 22px;
-  background-color: #fff;
+  background-color: #f4f1de;
   color: #3f4244;
   font-size: 120%;
   margin: 0 auto;
@@ -301,7 +301,7 @@ textarea {
 
 #share-btn:hover {
   background-color: #3f4244;
-  color: #efefef;
+  color: #f4f1de;
 }
 /* End of Form section */
 
