@@ -40,15 +40,6 @@ body {
   margin: 0 0;
 }
 
-/* Fix 'sticky' hover effect issue on touchscreens when user taps navbar links */
-@media (hover: hover) {
-  nav a:hover {
-    padding: 5px;
-    background-color: rgba(86, 117, 104, 0.2);
-    border-radius: 5px;
-  }
-}
-
 p,
 label {
   line-height: 30px;
@@ -90,6 +81,12 @@ header {
 /* nav menu anchor tags */
 nav a {
   font-weight: 400;
+}
+
+nav a:hover {
+  padding: 5px;
+  background-color: rgba(86, 117, 104, 0.2);
+  border-radius: 5px;
 }
 
 header a:hover {
