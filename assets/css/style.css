@@ -427,7 +427,7 @@ textarea {
   /* Categories content layout change */
   .cat-content-flex-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   .cat-content-wrapper {
@@ -435,7 +435,7 @@ textarea {
   }
 
   .cat-content-img {
-    margin: 0;
+    margin: 50px;
     height: 350px;
     width: 350px;
   }
@@ -449,7 +449,7 @@ textarea {
   }
 
   .cat-content-text-wrapper {
-    padding: 20px;
+    margin: 50px;
     align-self: center;
   }
 
