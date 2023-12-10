@@ -2,7 +2,7 @@
 
 Mind Flora is a site for encouraging users to reap the myriad health benefits of spending time in nature. The site’s main section highlights popular outdoor destinations across the UK, based on the categories of Mountains, Coasts, Lakes and Forests.
 
-In the form section at the bottom of the page, users have the facility to share and post their own favourite outdoor destinations. Thus creating a community driven content site for promoting the benefits of connecting with nature and the positive impact it has on mental well-being.
+In the form section at the bottom of the page, users have the facility to share and post their own favorite outdoor destinations. Thus creating a community driven content site for promoting the benefits of connecting with nature and the positive impact it has on mental well-being.
 
 The live link can be found here - [Mind Flora](https://kun-shukla.github.io/ci-p1-mind-flora/)
 
