@@ -173,16 +173,17 @@ Issue observed while using the deployed site on iOS Chrome/Safari browsers, wher
 
 ### Frameworks / Libraries / Programs Used
 
+- [Adobe photoshop](https://adobe.com/) - for compressing image file sizes without reducing quality, converting images/video to a web compatible format.
 - [Am I Responsive](http://ami.responsivedesign.is/) - for the Readme file's hero image depicting a mock-up of how the web page looks like across different device screen sizes.
 - [Balsamiq](https://balsamiq.com/) - for lo-fi wireframing
 - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - for implementing responsiveness and the navbar drop-down 'sub-menu' functionality
 - [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and troubleshooting. As well as for testing responsiveness and site performance scores (Lighthouse)
+- [Coolers](https://coolors.co) - for deciding on a compatible color theme.
+- [Flaticon](https://www.flaticon.com) - for the site's favicon
 - [Font Awesome](https://fontawesome.com/) - Used for Social Media icons in footer.
 - [GitHub](https://github.com/) - Used for version control and deployment.
 - [Google Fonts](https://fonts.google.com/) - Used to import custom fonts.
-- [Adobe photoshop](https://adobe.com/) - for compressing image file sizes without reducing quality, converting images/video to a web compatible format.
-- [Flaticon](https://www.flaticon.com) - for the site's favicon
-- [Coolers](https://coolors.co) - for deciding on a compatible color theme.
+- [Visual Studio Code](https://code.visualstudio.com) - Used as the code editor.
 - [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
 
 ## Deployment
