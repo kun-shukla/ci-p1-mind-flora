@@ -337,8 +337,8 @@ textarea {
   }
 }
 
-/* Media query: 394px or below (for small mobile phones) */
-@media screen and (max-width: 394px) {
+/* Media query: 992px or below (for small mobile phones) */
+@media screen and (max-width: 992px) {
   /* Hero overlay text */
   #overlay-text {
     bottom: 10%;
@@ -348,6 +348,7 @@ textarea {
     background-color: rgba(86, 117, 104, 0.5);
   }
 }
+
 /* Media query: 576px and up (for larger mobile phones or for mobiles in landscape mode) */
 @media screen and (min-width: 576px) {
   html {
