@@ -136,7 +136,7 @@ main {
 }
 
 #hero-bg-img {
-  background: url("../images/hero-img.webp") no-repeat center center;
+  background: url("../images/hero-img.webp") no-repeat center center / cover;
   height: 600px;
 }
 
@@ -147,7 +147,7 @@ main {
   right: 0;
   left: 0;
   margin: auto;
-  bottom: 3%;
+  bottom: 14%;
   max-width: 460px;
 }
 
@@ -337,6 +337,17 @@ textarea {
   }
 }
 
+/* Media query: 394px or below (for small mobile phones) */
+@media screen and (max-width: 394px) {
+  /* Hero overlay text */
+  #overlay-text {
+    bottom: 10%;
+  }
+
+  #overlay-text h4 {
+    background-color: rgba(86, 117, 104, 0.5);
+  }
+}
 /* Media query: 576px and up (for larger mobile phones or for mobiles in landscape mode) */
 @media screen and (min-width: 576px) {
   html {
@@ -483,6 +494,7 @@ textarea {
   /* Hero overlay text */
   #overlay-text {
     max-width: 600px;
+    bottom:10%;
   }
 
   #overlay-text h4 {
