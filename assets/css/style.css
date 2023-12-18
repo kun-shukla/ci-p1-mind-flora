@@ -210,6 +210,12 @@ main {
 .cat-content-text-wrapper p {
   max-width: 500px;
   margin: 0 auto 1rem;
+
+}
+
+/* Create extra spacing before the next cat-content section starts */
+.cat-content-text-wrapper p:last-child {
+  margin-bottom: 2rem;
 }
 
 .cat-content-img {
