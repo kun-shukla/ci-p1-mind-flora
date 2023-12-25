@@ -85,7 +85,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: rgba(243, 213, 165, 0.3);
+  background-color: #d5daea;
   border-radius: 5px;
 }
 
@@ -118,7 +118,7 @@ header a:hover {
 /* Override default hover effect color style (applied by Bootstrap's dropdown menu component) for consistency */
 .dropdown-item:focus,
 .dropdown-item:hover {
-  background-color: rgba(243, 213, 165, 0.3);
+  background-color: #d5daea;
 }
 /* End of Header section */
 
@@ -192,7 +192,7 @@ main {
 }
 
 .about-sec-cat h4:hover {
-  background-color: rgba(243, 213, 165, 0.3);
+  background-color: #d5daea;
   border-radius: 5px;
   text-decoration: none;
 }
@@ -208,9 +208,10 @@ main {
   text-align: center;
 }
 
-/* Apply below class to 'Categories content' section to give an alternating background color to each category for visual appeal */
-.pale-yellow-bg {
-  background-color: rgba(243, 213, 165, 0.3);
+/* Target every other category content sub-section (starting from the first one) for an alternating background color to enhance visual appeal  */
+.cat-content-wrapper:nth-child(odd)  {
+  /* "Pale blueish-purple" */
+  background-color: #d5daea;
 }
 
 .cat-content-text-wrapper p {
